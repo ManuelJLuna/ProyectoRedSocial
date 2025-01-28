@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Rouge+Script&display=swap" rel="stylesheet">
+    <title>El kiwi</title>
+</head>
+<body>
+    
+    <h1 id="mediaName"> <img src="./favicon.ico" alt="Kiwi" id="mediaIcon"> El kiwi</h1>
+    
+    <div id="postDiv">
+        <h2>Postear</h2>
+        <form id="postForm" onsubmit="postData()" novalidate>
+            <label for="postTitle">Titulo:</label>
+            <input type="text" name="postTitle" id="postTitle" required autocomplete="off">
+            <label for="postContent">Contenido:</label>
+            <textarea name="postContent" id="postContent" required autocomplete="off"></textarea>
+            <p class="error">Debes de completar ambos campos</p>
+            <button type="submit" id="publish">Enviar</button>
+        </form>
+    </div>
+    <h2>Posteos</h2>
+    <ul id="postList">
+
+    </ul>
+
+
+    <script src="./scipt.js"></script>
+</body>
+</html>
